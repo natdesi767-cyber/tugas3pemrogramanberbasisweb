@@ -1,0 +1,42 @@
+berpindah dari native javascript ke vue js, dan kita akan membuat vue component dan juga template
+
+
+app.vue= disini menggunakan router view di app.vue ini, ini adalah komponen yang disediakan oleh vue.
+
+index.js= index.js ini untuk routingnya, bagian login, dashboard, stock dll ini untuk berpindah-pindahnya
+import ini digunakan karena sudah dibuatkan vue nya, ada disini, folder view, isinya dashboard, loginview, 
+stockview dan trackingview
+
+loginview.vue= disini elemen-elemen html nya
+lalu submit.prevent ini untuk handle login
+lalu click.prevent untuk bagan lupa password dan registernya
+dan untuk logicnya ada di bagian script setup, vue router dan sweetalert ini untuk library untuk menampilkan 
+modal.
+//login ini unutk menghandle login
+//popup ini untuk menampilkan bagian lupa password dan register
+//login dan dibagian ini ada router.push untuk menuju dashboard
+
+dashboardview.vue= disini ada mounted untuk menampilkan semacam salam selamat pagi, siang, sore atau malam 
+sesuai dengan jam lokal kita.
+
+stockview.vue= disini sebenernya sama aja dengan tugas 2 kemarin ya, tidak ada bedanya, 
+disini ada filter upbjj, ada filter kategori, sorting atau mengurutkan data, kemudian filter 
+untuk menampilkan stok yang menipis.
+lalu di bagian script setup ini terdapat import mynavbar dari mynavbar.vue ini ya, dan ada import 
+stockdata yang berisi databahanajar.json yang kita dapatkan dari elearning, formatnya berupa file json.
+dan disini ada filteredData, ada resetfilter, statustext, statuskelas.
+dan openaddmodal ini untuk menambahkan data-data yang akan kita inputkan
+//edit item disini berfungsi untuk meng-edit buku, seperti judul, harga, ktegori, qty dsb
+//deleteitem ini hanya perintah konfirmasi untuk menghapus atau tidak, menghapus item atau disini buku ya
+
+tracking.vue= disini masih sama seperti tugas 2 kemarin, disini menggunakan submit.prevent untuk men-submitDO
+//resetform ini ketika kita selesai meng-input data, maka data nya akan auto reset dan auto increment, 
+jika kita selesai submit data 1, dan ketika kita ingin memasukkan data baru, maka formnya sudah 
+ter-reset dan angkanya menjadi 2
+
+<h3> </h3>
+
+
+
+
+
